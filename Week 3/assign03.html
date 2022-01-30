@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style03.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Requirement -->
+    <title>Wes Peterson's Assignment 3</title>
+    <style>
+      th {
+        color:Lime;
+      }
+      footer{
+        text-align: center;
+      }
+      .centerimages {
+        text-align: center;
+      }
+
+    </style>
+</head>
+
+<body>
+  <header id="header" style="text-align: center;">
+
+  <!-- "Welcome" Heading requirement -->
+  <h1>Welcome to Wes Peterson's Home Page</h1>
+  <!-- Link to my index.html with a horizontal rule -->
+  <h3>For a complete list of my assignments, Click Here -> <a href="../index.html">CS 213 Assignments</a></h3>
+  <a href="#footer"> Bottom of Page</a>
+  </header>
+  <br>
+  <hr>
+
+  <div style="margin-left: 10%; margin-right: 10%;">
+    <h2 style="text-align: left; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">About the Creator</h2>
+    <!-- Maintain a 3:4 aspect ratio for my picture -->
+    <img src="me.jpg" alt="a picture of me" style="width:300px;height:400px;">
+    <!-- Playing around with a .gif file -->
+    <img src="coding.gif" alt="coding.gif">
+    <br>
+
+    <!-- Information about me -->
+    <h3>Intro</h3>
+    <p>Hey Folks! Welcome to my collection of assignments for CS 213.  
+      My name is Wes Peterson and I am currently 24 years old! 
+      I am an on-campus student from Modesto, California.
+      I am currently majoring in Computer Informational technologies 
+      while minoring in Computer Science. One of my favorite quotes would probably have to be
+      something my friend, Austin Stiles, would often say before he passed away.
+    </p>
+    
+    <!-- Creating a Block Quote -->
+    <blockquote style="font-style: italic; font-family: 'Times New Roman';">"You don't have to know how to ride a bike. You just have to know how to get back on it when you fall."</blockquote>
+    <br>
+
+    <h3>Hobbies</h3>
+    <p>I have way too many hobbies.  I enjoy the outdoorsy activities such as hunting, fishing,
+      camping, and scuba diving as well as the nerdy introverted activities like model building, 
+      board/tabletop games, and so on. I also have a huge love for computer programming.  I am 
+      always working on new projects and programs. Here are some pictures for more context.
+    </p>
+    <div class="centerimages">
+      <img src="hunting.JPG" alt="hunting" style="width:200px;height:266px;">
+      <img src="games.JPG" alt="games" style="width:200px;height:266px;">
+      <img src="programming.JPG" alt="programming" style="width:200px;height:266px;">
+    </div>
+    <br>
+
+    <h3>School</h3>
+    <p>I attend Brigham Young University Idaho.  I began my journey there in 2015 and am currently a senior.
+      My hope and plan is to graduate by the end of this year. I want to work in the computer field with something
+      kind of job in the programming or IT industry.  For more information about my school, click the picture below.
+    </p>
+    <div class="centerimages">
+      <a href="https://www.byui.edu" >
+        <img src="byui.png" alt="byui" style="width:200px;height:200px; text-align: center;">
+      </a>
+    </div>
+    <br>
+    <!-- Using a <strong> to create a bold format -->
+    <strong style="font-family:Courier New;">Listed below is my class schedule...</strong>
+
+    <!-- Table requirement-->
+    <table style="border:1px solid rgb(255, 255, 255)">
+      <tr>
+        <th>Course #</th>
+        <th>Course Description</th>
+        <th>Sec #</th>
+        <th>Class Time</th>
+        <th>Class Location</th>
+      </tr>
+      <tr>
+        <td>CIT 353</td>
+        <td>Operating Systems II</td>
+        <td>02</td>
+        <td>N/A</td>
+        <td>Online</td>
+      </tr>
+      <tr>
+        <td>CS 213</td>
+        <td>Web Engineering I</td>
+        <td>03</td>
+        <td>N/A</td>
+        <td>Online</td>
+      </tr>
+      <tr>
+        <td>CS 246</td>
+        <td>Software Design and Development</td>
+        <td>01</td>
+        <td>N/A</td>
+        <td>Online</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+<hr>
+
+  <div class="questionnaire">
+    <h2 style="text-align: center;">Questionnaire of the Week</h2>
+    <p style="text-align: center;"> Fill out this quick form to share a bit more about yourself!
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="">
+      <br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="">
+      <br>
+      <label for="bio">Share some fun details about yourself:</label>
+      <br>
+      <textarea id="bio" name="bio" rows="4" cols="50">Type your response here...</textarea>
+      <br>
+      <p>How did you discover this site?</p>
+      <input type="radio" id="friend" name="friend" value="Friend">
+      <label for="friend">Friend</label><br>
+      <input type="radio" id="websearch" name="websearch" value="WebSearch">
+      <label for="css">Web Search</label><br>
+      <input type="radio" id="other" name="other" value="Other">
+      <label for="other">Other</label>
+      <br>
+      <br>
+      <p> What classes are you taking this semester </p>
+      <input type="checkbox" id="class1" name="class1" value="CS213">
+      <label for="class1"> CS213</label><br>
+      <input type="checkbox" id="class2" name="class2" value="CS246">
+      <label for="class2"> CS246</label><br>
+      <input type="checkbox" id="class3" name="class3" value="CS165">
+      <label for="class3"> CS165</label><br>
+      <input type="checkbox" id="class4" name="class4" value="CS101">
+      <label for="class4"> CS101</label><br>
+      <input type="checkbox" id="class5" name="class5" value="CS124">
+      <label for="class5"> CS124</label><br>
+      <input type="checkbox" id="otherClass" name="otherClass" value="otherClass">
+      <label for="otherClass"> Other Not Listed</label><br>
+      <br>
+      <label for="school">How are you attending school right now?:</label>
+    
+      <select name="school" id="school">
+        <option value="campus">On-Campus</option>
+        <option value="online">On-Campus Remote (Online)</option>
+        <option value="pathways">Pathways</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+  <br>
+  <footer id="footer">
+    <p>Contact Information:  
+    <a href="mailto:wesleycp@byui.edu">Email</a> - 
+    <a href="https://www.linkedin.com/in/wesley-peterson-81b933123/"> LinkedIn</a></p>
+    <a href="#header"> Top of Page</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+  }
+  
+h1 {
+    color: lime;
+    font-family:'Courier New'
+  }
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.questionnaire{
+    margin-left: 20%;
+    margin-right: 20%;
+}
