@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style04.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wes's Waterfowl Hunts</title>
+    <style>
+      
+      .table{
+        margin-left: 5%;
+        text-align: center;
+        background-color:rgb(34, 34, 34);
+        border-style: solid;
+        border-color:rgb(83, 83, 83);
+      }
+      th{
+          font-size: x-large;
+      }
+      td{
+        font-size: large;
+        border-style: solid;
+        border-color:rgb(83, 83, 83);
+      }
+      form{
+          margin-left: 5%;
+      }
+      label{
+          color: white;
+      }
+      #label{
+          color: white;
+      }
+      #formtitle{
+          text-align: center;
+      }
+      #formsubtitle{
+          text-align: center;
+      }
+      
+
+
+    </style>
+</head>
+<body>
+  <header id="header">
+  <h1 class="website-title">Welcome to Wes's Waterfowl Hunts </h1>
+  <p id="website-subtitle">The best source for all your outdoor waterfowl needs!
+  </p>
+  <img src="ducks2.jpg" alt="ducks" style="width:320px;height:240px;">
+  <img src="ducks1.jpg" alt="ducks" style="width:320px;height:240px;">
+  <img src="ducks3.jpg" alt="ducks" style="width:320px;height:240px;">
+  <ul class ="navbar">
+    <li>
+      <a href="../index.html">CS213 Home Page</a>
+      <a href="assign04.html">Duck Home Page</a>
+      <a href="assign04_2.html">Schedule a Trip</a>
+    </li>
+  </ul>
+</header>
+<br>
+<div class="content">
+  <h1 id="formtitle">Schedule a Trip Today</h1>
+  <p id="formsubtitle">After choosing a package from this table. Please fill out the form below.</p>
+
+  <table class="table">
+    <tr>
+      <th>Package</th>
+      <th>Duration</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Nature Hike</td>
+      <td>1 Hour</td>
+      <td>$30.00 USD</td>
+    </tr>
+    <tr>
+      <td>Guided Hunt</td>
+      <td>1 Day</td>
+      <td>$100.00 USD</td>
+    </tr>
+    <tr>
+        <td>Tour of WMA Museum</td>
+        <td>3 Hours</td>
+        <td>$50.00 USD</td>
+      </tr>
+  </table>
+    <br>
+    
+    <form>
+    <h2>Submit Your Information</h2>
+    <p> Fill out this quick form so we can get you processed!
+    <br>
+    <br>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="">
+      <br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="">
+      <br>
+      <p id="label">What package(s) will you be requesting?</p>
+      <input type="checkbox" id="nature-hike" name="nature-hike" value="nature-hike">
+      <label for="nature-hike"> Nature Hike</label><br>
+      <input type="checkbox" id="guided-hunt" name="guided-hunt" value="guided-hunt">
+      <label for="guided-hunt"> Guided Hunt</label><br>
+      <input type="checkbox" id="tour" name="tour" value="tour">
+      <label for="tour"> Tour of WMA Museum</label><br>
+      <br>
+      <label for="school">How many people in your group?</label>
+      <select name="school" id="school">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5+">5+</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+</div>
+<br>
+<footer id="footer">
+  <img  class="gif" src="duckgif.gif" alt="duckgif" style="width:50px;height:50px;">
+  <p>Contact Information:  
+  <a href="mailto:wesleycp@byui.edu">Email</a> - 
+  <a href="https://www.linkedin.com/in/wesley-peterson-81b933123/"> LinkedIn</a></p>
+  <a href="#header"> Top of Page</a>
+</footer>
+</body>
+</html>
