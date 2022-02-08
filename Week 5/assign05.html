@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 05</title>
+    <style>
+
+      .column {
+        float: left;
+        width: 31%;
+        padding: 0.2%;
+        background-color: rgb(45, 45, 45);
+        text-align: center;
+        vertical-align: middle;
+        border-style: solid;
+        border-color: black;
+      }
+
+      .row {
+        text-align: center;
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color:  rgb(45, 45, 45);
+        text-align: center;
+      }
+
+      .flexbox > div {
+        background-color: rgb(30, 30, 30);
+        width: auto;
+        height: auto;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+        vertical-align: middle;
+        font-size: 13px;
+      }
+
+      body {
+        background: rgb(0, 0, 0);
+        background-image: url("spacebackground.jpg");
+        color: white;
+        background-attachment: fixed;
+      }
+
+      header{
+        text-align: center;
+      }
+
+      .content{
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: rgb(48, 77, 172);
+        padding: 0.25%;
+        border-style: solid;
+      }
+
+      nav{
+        list-style-type: none;
+        text-align: center;
+        list-style-position: inside;
+      }
+      
+      ul{
+        list-style: none;
+      }
+      footer{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 7px;
+        font-size: large;
+    }
+    img{
+        width: 100%;
+        height: auto;
+      }
+      
+    @media only screen and (min-width: 768px) {
+      h1{
+        font-family:'Courier New', Courier, monospace;
+        font-size: 52px;
+      }
+      h2{
+        font-family:'Courier New', Courier, monospace;
+        font-size: 23px;
+      }
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a{
+        font-size: xx-large;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      body{
+      }
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+      }
+      h2, a{
+        font-family:'Courier New', Courier, monospace;
+        font-size: 12px;
+      }
+      h1{
+        font-family:'Courier New', Courier, monospace;
+        font-size: 25px;
+      }  
+}
+
+    </style>
+</head>
+
+<body>
+  <header id="header">
+    <img src="startreklogo2.png" alt="logo" id="mainlogo">
+  <h1>The Final Fan-Frontier </h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">CS213 Home Page</a></li>
+    </ul>
+  </nav>
+  
+  <div class="content">
+<!--   <p>Welcome to my version of a Star Trek fan website. This week we were supposed to create a
+     webpage with images to demonstrate the use of viewports and formatting. So, I thought to myself, 
+     What better way to do this than expressing myself through one of my nerdy interests. Please enjoy
+     my VERY unofficial concept for a Star Trek Fan Website.</p> -->
+
+<h1 style="text-align:center">-TV Shows and Movies-</h1>
+    <div class="row">
+      <div class="column">
+        <h2>Star Trek: Deep Space Nine</h2>
+        <img src="ds9.jpg" alt="ds9" >
+        <p>Commander Benjamin Sisko is in charge of a diverse crew.  Sisko and the crew must fight off rival alien species who
+          want control of Deep Space Nine because of its strategic position close to a wormhole, 
+          which allows speedy travel to the far reaches of space.</p>
+      </div>
+      <div class="column">
+        <h2>Star Trek: Voyager</h2>
+        <img src="voyager.jpg" alt="voyager" >
+        <p>Kathryn Janeway is the captain of a starship that is lost in space and must travel across
+          an unexplored region of the galaxy to find its way back home. On its way, the crew encounters
+          different species they must deal with, but find that all their adventures only make them long for home.</p>
+      </div>
+      <div class="column">
+        <h2>Star Trek: The Next Gen</h2>
+        <img src="tng.jpg" alt="tng" >
+        <p> This series is set 78 years after the original series --
+           in the 24th century. Instead of Capt. James Kirk, a less volatile and more mature Capt. Jean-Luc Picard heads the
+           crew of various humans and alien creatures in their adventures in space -- the final frontier.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h2>Star Trek: Enterprise</h2>
+        <img src="enterprise.jpg" alt="enterprise">
+        <p>This installment of the "Star Trek" franchise is set on the Enterprise NX-01 -- the first Earth starship capable
+           of warp 5 -- and explores the history of the interplanetary upheaval that eventually leads to the formation of 
+           the Federation.</p>
+      </div>
+      <div class="column">
+        <h2>Star Trek: The Original Series</h2>
+        <img src="tos.jpg" alt="tos">
+        <p>The iconic series "Star Trek" follows the crew of the starship USS Enterprise as it completes its missions in space
+          in the 23rd century. Captain James T. Kirk and his trusty crew confront strange alien races, friendly and hostile alike,
+           as they explore unknown worlds.</p>
+      </div>
+      <div class="column">
+        <h2>Star Trek Films</h2>
+        <img src="films.jpg" alt="films">
+        <p>Explore the vast branches of the Star Trek films. Whether you want to see more Kirk, Picard, action, lore building, or parallel universes,
+          there is a film here that you are looking for. Includes TOS Movies, TNG Movies, and Kelvin Timeline films.
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;">-Races-</h1>
+    <div class="flexbox">
+      <div><img src="federation.png" alt="federation"></div>
+      <div><img src="cardassian.png" alt="cardassian"></div>
+      <div><img src="klingon.png" alt="klingon"></div>  
+      <div><img src="borg.jpg" alt="borg"></div>
+      <div><img src="romulan.png" alt="romulan"></div>
+      <div><img src="ferengi.png" alt="ferengi"></div>  
+      <div><img src="bajoran.png" alt="bajoran"></div>
+      <div><img src="dominion.png" alt="dominion"></div>
+      <div><img src="8472.png" alt="8472"></div>
+      <div><img src="xindi.png" alt="xindi"></div>
+      <div><img src="breen.png" alt="breen"></div>
+    </div>
+      <footer>
+        <img  class="gif" src="battle.gif" alt="battlegif">
+        <p>Contact Information:  
+        <a href="mailto:wesleycp@byui.edu">Email</a> - 
+        <a href="https://www.linkedin.com/in/wesley-peterson-81b933123/"> LinkedIn</a></p>
+        <a href="#header"> Top of Page</a>
+      </footer>
+  </div>
+</body>
+</html>
