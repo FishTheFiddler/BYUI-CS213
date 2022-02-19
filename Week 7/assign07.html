@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style07.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    
+</head>
+
+<body>
+  <h1>JavaScript Monthly Payment Calculator </h1>
+  <a href="../index.html">CS213 Home Page</a>
+  <br>
+  <br>
+  <div class="calculator">
+  <label for="apr">APR (%)</label><br>
+  <input id="apr" type="text" name="apr" value="">
+  <br>
+  <label for="term">Loan Term (Years)</label><br>
+  <input id="term" type="text" name="term" value="">
+  <br>
+  <label for="amount">Loan Amount (USD $)</label><br>
+  <input id="amount" type="text" name="amount" value="">
+  <br>
+  <label for="test">Monthly Payment</label><br>
+  <input type="text" id="payment" name="payment" value="" readonly>
+  <br>
+  <br>
+  <input type="reset" value="Clear Form" id="clear" onclick="onClear()"></button>
+  <button type="button" id="calculate" onclick="calculateFunction()">Click Me!</button>
+  <br>
+  <p id="error"></p>
+
+</div>
+
+  <script>
+
+    function validateData(apr, term, amount){
+      var errorMessage = document.getElementById("error");
+      errorMessage.innerHTML = "";
+      errorMessage.style.backgroundColor = "gray";
+      var regExp = /[a-zA-Z]/g;
+
+
+       if (apr < 0 || apr > 25 || apr == "" || regExp.test(apr)){
+        errorMessage.style.backgroundColor = "yellow";
+        errorMessage.append("ERROR: Invalid input for the APR. Please choose a value between 1 and 25. No alphabetic characters allowed.");
+        document.getElementById("apr").focus();
+        return false;
+      }
+
+      else if (term < 0 || term >= 41 || term == "" || regExp.test(term)){
+        errorMessage.style.backgroundColor = "yellow";
+        errorMessage.append("ERROR: Invalid input for Term. Please choose between 1 and 40. No alphabetic characters allowed.");
+        document.getElementById("term").focus();
+        return false;
+      }
+
+      else if (amount < 0 || amount == "" || regExp.test(amount)){
+        errorMessage.style.backgroundColor = "yellow";
+        errorMessage.append("ERROR: Invalid input for the Amount. Please enter a positive number. No alphabetic characters allowed.");
+        document.getElementById("amount").focus();
+        return false;
+      }
+      
+      else{
+        errorMessage.innerHTML = "-Calculation Complete-";
+        errorMessage.style.backgroundColor = "green";
+        errorMessage.style.textAlign = "center";
+        return true;
+      }
+    }
+
+    function calculateFunction() {
+      var valid = false;
+      
+      var rawApr = document.getElementById("apr").value;
+      var apr = rawApr / 100;
+      apr = parseFloat(apr);
+
+      var rawTerm = document.getElementById("term").value;
+      var term = parseFloat(rawTerm);
+
+      var rawAmount = document.getElementById("amount").value;
+      var amount = parseFloat(rawAmount);
+
+      valid = validateData(rawApr, rawTerm, rawAmount);
+
+      if (valid){
+        var equation1 = (amount * apr / 12.0) * ((1.0 + (apr / 12.0)) ** (12.0 * term));
+        var equation2 = ((1 + (apr / 12.0)) ** (12.0 * term)) - 1;
+        var equation3 = equation1 / equation2;
+        
+        document.getElementById("payment").value = "$" + equation3.toFixed(2);      
+      }
+    }
+
+    function onClear(){
+      document.getElementById("apr").value = "";
+      document.getElementById("term").value = "";
+      document.getElementById("amount").value = "";
+      document.getElementById("payment").value = "";
+      document.getElementById("apr").focus();
+    }
+    </script>
+</body>
+</html>
