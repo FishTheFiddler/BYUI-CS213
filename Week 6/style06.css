@@ -1,0 +1,104 @@
+body {
+  background-image:url("cloudbackground.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+header{
+    text-align: center;
+}
+
+.sidenavbar {
+  width: 8%;
+  position: fixed;
+  margin-left: 0.25%;
+  top: 10%;
+  left: 10px;
+  background: rgb(100, 172, 255);
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.sidenavbar > div > a{
+  font-size: large;
+}
+.sidenavbar > div > p{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  background: rgb(100, 172, 255);
+  border-style: solid;
+  border-radius: 10px;
+  font-size: x-large;
+}
+
+footer > p{
+    font-size: x-large;
+}
+
+#navbar{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  font-size: xx-large;
+  background: rgb(100, 172, 255);
+  list-style: none;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#navbar > div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 1%;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.content{
+  text-align: center;
+  background: rgb(38, 84, 136);
+  border-style: solid;
+  border-radius: 10px;
+
+}
+
+h2, h1{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+img{
+    width: 100%;
+    height: auto;
+  }
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+@media only screen and (max-width: 768px) {
+
+  p, a{
+    font-size: xx-small;
+  }
+  h1{
+    font-size: medium;
+  }
+  h2{
+    font-size: small;
+  }
+  .sidenavbar > div > a{
+    font-size: xx-small;
+    }
+}
