@@ -1,0 +1,30 @@
+body {
+    background-color: blue;
+    text-align: center;
+    color: lime;
+  }
+  
+.part1, .part2{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  background-color: darkblue;
+  padding: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: x-large;
+}
+
+#error{
+  padding:2%;
+  font-size: large;
+  
+}
+hr{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+a{
+  color: white;
+}
+  

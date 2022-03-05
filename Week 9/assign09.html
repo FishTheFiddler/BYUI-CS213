@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style09.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 9</title>
+  <script type="text/javascript" src="assign09.js"></script>
+    
+</head>
+
+<body>
+  <h1>Ajax and Json</h1>
+  <a href="../index.html">CS213 Home Page</a>
+  <div class="part1">
+    <h2>10 Largest cities</h2>
+    <p>Please select country:<p>
+    <input type="radio" value="usa.txt" onclick="getCityRequest(value)" name="country">USA
+    <input type="radio" value="mexico.txt" onclick="getCityRequest(value)" name="country">Mexico
+    <input type="radio" value="canada.txt" onclick="getCityRequest(value)" name="country">Canada
+    <input type="radio" value="russia.txt" onclick="getCityRequest(value)" name="country">Russia
+    <p id="ajax"></p>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <div class="part2">
+    <h2>Student Information</h2>
+    <input type="text" value="json.txt"  name="studentInfo" id="studentInfo">
+    <button type="button" id="validate" onclick="getStudentRequest()">Get Information</button>
+    <p id="json"></p>
+    <p id="error"></p>
+  </div>
+
+ 
+</body>
+</html>
