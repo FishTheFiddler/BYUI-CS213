@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 11</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style11.css">
+    <script src="assign11.js"></script>
+  </head>
+
+<body>
+  <h1>Breakfast Menu Catalog</h1>
+  <a href="../index.html">CS213 Home Page</a>
+  <br>
+  <br>
+  <div class="validator">
+    <form onsubmit="return validateData()" onreset="onClear()" action="assign11.php" method="get">
+      <label for="first_name">First Name</label><br>
+      <input id="first_name" type="text" name="first_name" value="";>
+      <br>
+      <label for="last_name">Last Name</label><br>
+      <input id="last_name" type="text" name="last_name" value="">
+      <br>
+      <label for="address">Address</label><br>
+      <textarea id="address" name="address" rows="4" cols="50"></textarea>
+      <br>
+      <label for="phone">Phone</label><br>
+      <input id="phone" type="text" name="phone" value="">
+      <br>
+      <input type="checkbox" id="item_0" name="item_0" value="Breakfast Omlette" onclick="function1()">
+      <label for="item_0"> Breakfast Omlette - $7.95</label><br>
+      <input type="checkbox" id="item_1" name="item_1" value="Endless Pancake Stack" onclick="function1()">
+      <label for="item_1"> Endless Pancake Stack - $13.95</label><br>
+      <input type="checkbox" id="item_2" name="item_2" value="French Toast and Bacon" onclick="function1()">
+      <label for="item_2"> French Toast and Bacon - $9.95</label> <br>
+      <input type="checkbox" id="item_3" name="item_3" value="Egg White Slim-Special" onclick="function1()">
+      <label for="item_3"> Egg White Slim-Special - $6.95</label>
+      <br>
+      <br>
+      <label for="total">Total</label><br>
+      <input type="text" id="total" name="total" value="" readonly>
+      <br>
+      <br>
+      <hr>
+      <p>Credit Card Type</p>
+      <input type="radio" id="cardType" name="cardType" value="Visa">
+      <label for="visa">Visa</label><br>
+      <input type="radio" id="cardType" name="cardType" value="American Express">
+      <label for="american_express">American Express</label><br>
+      <input type="radio" id="cardType" name="cardType" value="Mastercard">
+      <label for="mastercard">Mastercard</label>
+      <br>
+      <br>
+      <label for="credit_card">Credit Card #</label><br>
+      <input id="credit_card" type="text" name="credit_card" value="">
+     
+     <!-- <br>
+      <label for="exp_date">Credit Card Expiration Date</label><br>
+      <input id="exp_date" type="text" name="exp_date" value="">
+      <br>
+      -->
+      <br>
+      <label for="month">Credit Card Expiration Date</label><br>
+        <select name="month" id="month">
+          <option value="">Month</option>
+          <option value="January">01</option>
+          <option value="February">02</option>
+          <option value="March">03</option>
+          <option value="April">04</option>
+          <option value="May">05</option>
+          <option value="June">06</option>
+          <option value="July">07</option>
+          <option value="August">08</option>
+          <option value="September">09</option>
+          <option value="October">10</option>
+          <option value="November">11</option>
+          <option value="December">12</option></select>
+        <select name="year" id="year">
+          <option value="">Year</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2017">2026</option>
+          <option value="2018">2027</option>
+          <option value="2019">2028</option></select>
+          
+      <br>
+      <br>
+      <button type="reset" id="clear">Reset</button>
+      <button type="submit" id="validate" onclick="validateData()">Submit</button>
+      <!-- <button type="button" id="validate" onclick="validateData()">Click Me!</button> -->
+      <p id="error">status</p>
+    </form>
+    <br>
+  
+</div>
+</body>
+</html>

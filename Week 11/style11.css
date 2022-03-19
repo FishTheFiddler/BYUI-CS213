@@ -1,0 +1,21 @@
+body {
+    background-color: darkgray;
+    text-align: center;
+  }
+  
+  .validator{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    background-color: gray;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: xx-large;
+  }
+  
+  #error{
+    padding:2%;
+    font-size: large;
+    
+  }
+  
