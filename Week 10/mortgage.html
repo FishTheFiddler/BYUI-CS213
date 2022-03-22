@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style_mortgage_10.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PHP Loan Calculator</title>
+      
+  </head>
+  <body>
+    <h1>PHP Monthly Payment Calculator </h1>
+      <a href="../index.html">CS213 Home Page</a>
+      <br>
+      <br>
+      <div class="calculator">
+      <form action="mortgage.php" method="GET">
+        <label for="apr">APR (%)</label><br>
+        <input id="apr" type="text" name="apr" value="">
+        <br>
+        <label for="term">Loan Term (Years)</label><br>
+        <input id="term" type="text" name="term" value="">
+        <br>
+        <label for="amount">Loan Amount (USD $)</label><br>
+        <input id="amount" type="text" name="amount" value="">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <button type="reset" onclick="getFocus()" onchange="getFocus()" id="clear">Clear</button><br>
+      </form>
+    </div>
+  </body>
+</html>
