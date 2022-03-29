@@ -1,0 +1,24 @@
+body{
+    background-color: grey;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header {
+    text-align: center;
+    background-color: #c0ff4b;
+    color: #0e4c8a;
+}
+.center {
+    text-align: center;
+    background-color: #04924b;
+    color: #000000;
+    padding: 20px;
+}
+.result {
+    text-align: center;
+    background-color: #c0ff4b;
+    padding: 10px 30% 10px 30%;
+}
+#error {
+    color: white;
+}
